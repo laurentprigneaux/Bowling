@@ -1,0 +1,26 @@
+Bowling Tests:
+-----------------------------------------------------------
+Test #1:
+Rolls History : 1;4;4;5;6;4;5;5;10;0;1;7;3;6;4;10;2;8;6;
+Score history : 5;14;29;49;60;61;77;97;117;133;
+Score=133, Expected=133, Check=OK
+-----------------------------------------------------------
+Test #2:
+Rolls History : 10;10;10;10;10;10;10;10;10;10;10;10;
+Score history : 30;60;90;120;150;180;210;240;270;300;
+Score=300, Expected=300, Check=OK
+-----------------------------------------------------------
+Test #3:
+Rolls History : 5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;10;
+Score history : 15;30;45;60;75;90;105;120;135;155;
+Score=155, Expected=155, Check=OK
+-----------------------------------------------------------
+Test #4:
+Rolls History : 1;4;4;5;6;4;5;5;10;0;1;7;3;6;4;10;2;8;
+Raised exception (Game is not complete yet, so go on rolling...) as expected, Check=OK
+-----------------------------------------------------------
+Test #5:
+Rolls History : 1;4;4;5;6;4;5;5;10;0;1;7;3;6;4;10;2;7;6;
+Raised exception (Game is complete, no more roll is allowed) as expected, Check=OK
+-----------------------------------------------------------
+End of tests.
